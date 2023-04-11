@@ -1,0 +1,13 @@
+asgiref==3.6.0
+async-timeout==4.0.2
+certifi @ file:///C:/b/abs_85o_6fm0se/croot/certifi_1671487778835/work/certifi
+Django @ file:///home/conda/feedstock_root/build_artifacts/django_1676383122062/work
+django-redis==5.2.0
+django-redis-cache==3.0.1
+jieba @ file:///home/conda/feedstock_root/build_artifacts/jieba_1622403007736/work
+Pillow==9.4.0
+PyMySQL @ file:///home/conda/feedstock_root/build_artifacts/pymysql_1680003278958/work
+pytz==2022.7.1
+redis==3.5.3
+sqlparse @ file:///C:/b/abs_83jn6owfpc/croot/sqlparse_1668793499314/work
+wincertstore==0.2

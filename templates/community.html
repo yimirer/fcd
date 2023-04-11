@@ -1,0 +1,268 @@
+﻿
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Services</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href='http//fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+<link href="/static/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- start top_js_button -->
+<script type="text/javascript" src="/static/js/jquery.min.js"></script>
+<script type="text/javascript" src="/static/js/move-top.js"></script>
+<script type="text/javascript" src="/static/js/easing.js"></script>
+   <script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+		});
+	</script>
+</head>
+<body>
+<!-- start header -->
+<div class="header_bg">
+<div class="wrap">
+	<div class="header">
+		<div class="logo">
+			<a href="index.html"><img src="/static/img/H7/logo.png" alt=""/> </a>
+		</div>
+		<div class="social-icons">
+		    <ul>
+		      <li><a href="#" target="_blank"></a></li>
+			  <li><a href="#" target="_blank"></a></li>
+		      <li><a href="#" target="_blank"></a></li>
+			  <li><a href="#" target="_blank"></a></li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+</div>
+<!-- start header -->
+<div class="header_btm">
+<div class="wrap">
+	<div class="header_sub">
+		<div class="h_menu">
+			<ul>
+				<li><a href="{% url 'main:index' %}">你的主页</a></li>
+				<li><a href="{% url 'main:tags' %}">热门标签</a></li>
+				<li><a href="{% url 'main:details' %}">观点品读</a></li>
+				<li class="active"><a href="{% url 'main:community' %}">Sailboat社区欢迎你</a></li>
+				<li><a href="{% url 'main:information' %}">Sailboat社区规则</a></li>
+				<li><a href="{% url 'main:self_information' %}">你的信息</a></li>
+            </ul>
+		</div>
+		<div class="h_search">
+    		<form>
+    			<input type="text" value="" placeholder="search something...">
+    			<input type="submit" value="">
+    		</form>
+		</div>
+        <div class="menu">
+        	<ul>
+				<li><a href="{% url 'main:index' %}">你的主页</a></li>
+				<li><a href="{% url 'main:tags' %}">热门标签</a></li>
+				<li><a href="{% url 'main:details' %}">观点品读</a></li>
+				<li class="active"><a href="{% url 'main:community' %}">Sailboat社区欢迎你</a></li>
+				<li><a href="{% url 'main:information' %}">Sailboat社区规则</a></li>
+				<li><a href="{% url 'main:self_information' %}">你的信息</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <form action="/iphone/search.html">
+                <input type="text" value="Search" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Search';}" class="text">
+            </form>
+        </div>
+        <div class="sub-head">
+        	<ul>
+            	<li><a href="#" id="menu">Menu  <span></span></a></li>
+            	<li><a href="#" id="search">Search <span></span></a></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+	   <script type="text/javascript">
+		$(".menu,.search").hide();
+		$("#menu").click(function(){
+			$(".menu").toggle();
+			$(".search").hide();
+			$("#search").removeClass("active");
+			$("#menu").toggleClass("active");
+		});
+		$("#search").click(function(){
+			$(".search").toggle();
+			$(".menu").hide();
+			$("#menu").removeClass("active");
+			$("#search").toggleClass("active");
+			$(".text").focus();
+		});
+	</script>
+	<script type="text/javascript" src="/static/js/script.js"></script>
+	<div class="clear"></div>
+
+		<div class="clear"></div>
+</div>
+</div>
+</div>
+<!-- start top_bg -->
+<div class="top_bg">
+<div class="wrap">
+	<div class="top">
+		<h2>our services</h2>
+ 	</div>
+</div>
+</div>
+<!-- start main -->
+<div class="wrap">
+<div class="main">
+		<!-- start span_of_3 -->
+		<div class="span_of_3">
+			<div class="span1_of_3">
+				<a href="details.html"><img src="/static/img/H7/pic1.jpg" alt=""></a>
+				<div class="span1_of_3_text">
+					<h3><a href="details.html">Lorem Ipsum is simply  text</a></h3>
+					<p>Lorem Ipsum is simply sit amet consectetur dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+				</div>
+				<div class="ser_btn">
+					<a class="button  ser_btn1" href="details.html">read more</a>
+				</div>
+			</div>
+			<div class="span1_of_3">
+				<a href="details.html"><img src="/static/img/H7/pic2.jpg" alt=""></a>
+				<div class="span1_of_3_text">
+					<h3><a href="details.html">Lorem Ipsum is simply  text</a></h3>
+					<p>Lorem Ipsum is simply sit amet consectetur dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+				</div>
+				<div class="ser_btn">
+					<a class="button  ser_btn1" href="details.html">read more</a>
+				</div>
+			</div>
+			<div class="span1_of_3">
+				<a href="details.html"><img src="/static/img/H7/pic3.jpg" alt=""></a>
+				<div class="span1_of_3_text">
+					<h3><a href="details.html">Lorem Ipsum is simply  text</a></h3>
+					<p>Lorem Ipsum is simply sit amet consectetur dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+				</div>
+				<div class="ser_btn">
+					<a class="button  ser_btn1" href="details.html">read more</a>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<!--  -->
+		<div class="span_of_3">
+			<div class="span1_of_3">
+				<a href="details.html"><img src="/static/img/H7/pic4.jpg" alt=""></a>
+				<div class="span1_of_3_text">
+					<h3><a href="details.html">Lorem Ipsum is simply  text</a></h3>
+					<p>Lorem Ipsum is simply sit amet consectetur dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+				</div>
+				<div class="ser_btn">
+					<a class="button  ser_btn1" href="details.html">read more</a>
+				</div>
+			</div>
+			<div class="span1_of_3">
+				<a href="details.html"><img src="/static/img/H7/pic5.jpg" alt=""></a>
+				<div class="span1_of_3_text">
+					<h3><a href="details.html">Lorem Ipsum is simply  text</a></h3>
+					<p>Lorem Ipsum is simply sit amet consectetur dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+				</div>
+				<div class="ser_btn">
+					<a class="button  ser_btn1" href="details.html">read more</a>
+				</div>
+			</div>
+			<div class="span1_of_3">
+				<a href="details.html"><img src="/static/img/H7/pic6.jpg" alt=""></a>
+				<div class="span1_of_3_text">
+					<h3><a href="details.html">Lorem Ipsum is simply  text</a></h3>
+					<p>Lorem Ipsum is simply sit amet consectetur dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+				</div>
+				<div class="ser_btn">
+					<a class="button  ser_btn1" href="details.html">read more</a>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<!-- end grids_of_3 -->
+	</div>
+</div>
+<!-- start footer -->
+<div class="footer_bg">
+<div class="wrap">
+	<div class="footer">
+		<!-- start span_of_4 -->
+		<div class="span_of_4">
+			<div class="span1_of_4">
+				<h4>The website</h4>
+				<p>Find the common denominator</p>
+				<ul class="f_nav1">
+					<li class="timer"><a href="#">30-March 2023 </a></li>
+				</ul>
+				<p class="top"></p>
+				<ul class="f_nav1">
+					<li class="timer"><a href="#">30-March 2023 </a></li>
+				</ul>
+			</div>
+			<div class="span1_of_4">
+				<h4>About the website</h4>
+				<p>关于标签的社区<big></big>关于社区的情感共鸣平台</p>
+			</div>
+			<div class="span1_of_4">
+				<h4>a little about us</h4>
+				<p class="btm">我们</p>
+				<p>没啥可说的</p>
+
+			</div>
+			<div class="span1_of_4">
+				<h4>get in touch</h4>
+                <p class="btm">北京邮电大学 BUPT</p>
+                <p class="btm">北京 Beijing </p>
+                <p class="btm">中国 China</p>
+				<p class="btm1 pin">相关人员:</p>
+				<p class="btm1 mail"><a href="https://www.bupt.edu.cn/">学校<span>官网</span></a></p>
+				<p class="call">联系电话：</p>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+</div>
+</div>
+<!-- start footer -->
+{#<div class="footer_bg1">#}
+{#<div class="wrap">#}
+{#	<div class="footer1">#}
+{#		<!-- scroll_top_btn -->#}
+{#	    <script type="text/javascript">#}
+{#			$(document).ready(function() {#}
+{#			#}
+{#				var defaults = {#}
+{#		  			containerID: 'toTop', // fading element id#}
+{#					containerHoverID: 'toTopHover', // fading element hover id#}
+{#					scrollSpeed: 1200,#}
+{#					easingType: 'linear' #}
+{#		 		};#}
+{#				#}
+{#				#}
+{#				$().UItoTop({ easingType: 'easeOutQuart' });#}
+{#				#}
+{#			});#}
+{#		</script>#}
+{#		 <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>#}
+{#		<!--end scroll_top_btn -->#}
+{#		<div class="social-icons">#}
+{#		    <ul>#}
+{#		      <li><a href="#" target="_blank"></a></li>#}
+{#			  <li><a href="#" target="_blank"></a></li>#}
+{#		      <li><a href="#" target="_blank"></a></li>#}
+{#			  <li><a href="#" target="_blank"></a></li>#}
+{#			</ul>#}
+{#		</div>#}
+{#|#}
+{#		<div class="clear"></div>#}
+{#	</div>#}
+{#</div>#}
+{#</div>#}
+{#<div style="display:none"><script src='http//v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>#}
+</body>
+</html>

@@ -1,0 +1,237 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<title>Contact</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href='http//fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+<link href="/static/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- start top_js_button -->
+<script type="text/javascript" src="/static/js/jquery.min.js"></script>
+<script type="text/javascript" src="/static/js/move-top.js"></script>
+<script type="text/javascript" src="/static/js/easing.js"></script>
+   <script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+		});
+	</script>
+</head>
+<body>
+<!-- start header -->
+<div class="header_bg">
+<div class="wrap">
+	<div class="header">
+		<div class="logo">
+			<a href="index.html"><img src="/static/img/H7/logo.png" alt=""/> </a>
+		</div>
+		<div class="social-icons">
+		    <ul>
+		      <li><a href="#" target="_blank"></a></li>
+			  <li><a href="#" target="_blank"></a></li>
+		      <li><a href="#" target="_blank"></a></li>
+			  <li><a href="#" target="_blank"></a></li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+</div>
+<!-- start header -->
+<div class="header_btm">
+<div class="wrap">
+	<div class="header_sub">
+		<div class="h_menu">
+			<ul>
+				<li><a href="{% url 'main:index' %}">你的主页</a></li>
+				<li><a href="{% url 'main:tags' %}">热门标签</a></li>
+				<li><a href="{% url 'main:details' %}">观点品读</a></li>
+				<li><a href="{% url 'main:community' %}">文章发布</a></li>
+				<li class="active"><a href="{% url 'main:information' %}">Sailboat社区规则</a></li>
+				<li><a href="{% url 'main:self_information' %}">你的信息</a></li>
+            </ul>
+		</div>
+		<div class="h_search">
+    		<form>
+    			<input type="text" value="" placeholder="search something...">
+    			<input type="submit" value="">
+    		</form>
+		</div>
+        <div class="menu">
+        	<ul>
+				<li><a href="{% url 'main:index' %}">你的主页</a></li>
+				<li><a href="{% url 'main:tags' %}">热门标签</a></li>
+				<li><a href="{% url 'main:details' %}">观点品读</a></li>
+				<li><a href="{% url 'main:community' %}">文章发布</a></li>
+				<li class="active"><a href="{% url 'main:information' %}">Sailboat社区规则</a></li>
+				<li><a href="{% url 'main:self_information' %}">你的信息</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <form action="/iphone/search.html">
+                <input type="text" value="Search" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Search';}" class="text">
+            </form>
+        </div>
+        <div class="sub-head">
+        	<ul>
+            	<li><a href="#" id="menu">Menu  <span></span></a></li>
+            	<li><a href="#" id="search">Search <span></span></a></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+	   <script type="text/javascript">
+		$(".menu,.search").hide();
+		$("#menu").click(function(){
+			$(".menu").toggle();
+			$(".search").hide();
+			$("#search").removeClass("active");
+			$("#menu").toggleClass("active");
+		});
+		$("#search").click(function(){
+			$(".search").toggle();
+			$(".menu").hide();
+			$("#menu").removeClass("active");
+			$("#search").toggleClass("active");
+			$(".text").focus();
+		});
+	</script>
+	<script type="text/javascript" src="/static/js/script.js"></script>
+	<div class="clear"></div>
+
+		<div class="clear"></div>
+</div>
+</div>
+</div>
+<head>
+	<title>TAGS</title>
+	<style>
+	    body{
+            background-image: url("/static/img/background.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+		.btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            background-color: #feeeed;
+            color: #121a2a;
+            font-size: 16px;
+            text-align: center;
+            cursor: pointer;
+            text-decoration: none;
+            border: 2px ;
+        }
+	</style>
+</head>
+<!-- start top_bg -->
+<div   style="white-space:pre-wrap;font-size:125%;margin:5%;">
+
+社 区 规 则
+
+欢迎来到我们的博客网站。为了维护良好的社区秩序，我们制定了以下社区规则，希望每一位用户都能遵守：
+一、尊重他人，文明交流
+我们希望在这里建立一个文明、友好、尊重的交流环境，所以在发布任何评论、文章或其他形式的内容时，请确保言辞得体、不含攻击性和歧视性内容。任何语言暴力、谩骂、诋毁他人的行为都是不被允许的。
+
+二、不得发布涉及政治、色情、暴力等不当内容
+本站是一个绿色、健康的交流平台，我们拒绝一切违反社会公序良俗的内容，包括但不限于色情、政治、暴力、反动等不当内容。我们要求所有用户在发表内容时，遵守法律法规和道德规范。
+
+三、保护个人隐私
+我们重视用户个人隐私，保护用户信息安全是我们的责任。因此，用户不得公开他人的个人信息、隐私或者其他私人资料，同时也不得发布含有他人个人信息、隐私或者其他私人资料的文章、评论等内容。
+
+四、不得发布虚假信息、广告等内容
+本站拒绝一切虚假信息、广告等不良内容，用户不得发布任何虚假、虚构、误导、欺骗性的内容。此外，任何商业广告、招聘信息、链接、推广、传销等都不被允许。
+
+五、合理使用账号
+我们欢迎用户注册并使用本站提供的服务，但请合理使用账号，不得恶意注册、抢注、盗用、伪造、买卖账号等行为。同时，请勿向他人泄露自己的账号密码，保护好自己的账号安全。
+
+六、遵守版权规定
+本站尊重知识产权，任何用户发布的文章、图片、视频等作品，必须遵守版权法律法规，并且必须是原创或者已经获得合法授权。用户应当对自己所发布的内容负责，不得侵犯他人知识产权、版权等权利。
+
+七、遵守社区规则
+所有用户在使用本站服务时，都必须遵守社区规则，遵循诚实、守信、公正、公平的原则。任何违反社区规则的行为，我们将采取适当的措施予以处理。
+
+</div>
+<!-- start footer -->
+<div class="footer_bg">
+<div class="wrap">
+	<div class="footer">
+		<!-- start span_of_4 -->
+		<div class="span_of_4">
+			<div class="span1_of_4">
+				<h4>The website</h4>
+				<p>Find the common denominator</p>
+				<ul class="f_nav1">
+					<li class="timer"><a href="#">30-March 2023 </a></li>
+				</ul>
+				<p class="top"></p>
+				<ul class="f_nav1">
+					<li class="timer"><a href="#">30-March 2023 </a></li>
+				</ul>
+			</div>
+			<div class="span1_of_4">
+				<h4>About the website</h4>
+				<p>关于标签的社区<big></big>关于社区的情感共鸣平台</p>
+			</div>
+			<div class="span1_of_4">
+				<h4>a little about us</h4>
+				<p class="btm">我们</p>
+				<p>没啥可说的</p>
+
+			</div>
+			<div class="span1_of_4">
+				<h4>get in touch</h4>
+                <p class="btm">北京邮电大学 BUPT</p>
+                <p class="btm">北京 Beijing </p>
+                <p class="btm">中国 China</p>
+				<p class="btm1 pin">相关人员:</p>
+				<p class="btm1 mail"><a href="https://www.bupt.edu.cn/">学校<span>官网</span></a></p>
+				<p class="call">联系电话：</p>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+</div>
+</div>
+<!-- start footer -->
+{#<div class="footer_bg1">#}
+{#<div class="wrap">#}
+{#	<div class="footer1">#}
+{#		<!-- scroll_top_btn -->#}
+{#	    <script type="text/javascript">#}
+{#			$(document).ready(function() {#}
+{#			#}
+{#				var defaults = {#}
+{#		  			containerID: 'toTop', // fading element id#}
+{#					containerHoverID: 'toTopHover', // fading element hover id#}
+{#					scrollSpeed: 1200,#}
+{#					easingType: 'linear' #}
+{#		 		};#}
+{#				#}
+{#				#}
+{#				$().UItoTop({ easingType: 'easeOutQuart' });#}
+{#				#}
+{#			});#}
+{#		</script>#}
+{#		 <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>#}
+{#		<!--end scroll_top_btn -->#}
+{#		<div class="social-icons">#}
+{#		    <ul>#}
+{#		      <li><a href="#" target="_blank"></a></li>#}
+{#			  <li><a href="#" target="_blank"></a></li>#}
+{#		      <li><a href="#" target="_blank"></a></li>#}
+{#			  <li><a href="#" target="_blank"></a></li>#}
+{#			</ul>#}
+{#		</div>#}
+{#|#}
+{#		<div class="clear"></div>#}
+{#	</div>#}
+{#</div>#}
+{#</div>#}
+{#<div style="display:none"><script src='http//v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>#}
+</body>
+</html>

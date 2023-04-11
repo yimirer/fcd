@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/newlogin.css'%}">
+    <title>Login</title>
+</head>
+<body>
+{% if messages %}
+      <ul class="messages">
+        {% for message in messages %}
+        <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+        {% endfor %}
+      </ul>
+{% endif %}
+<div class="fixed">
+  <div class="form-demo">
+    <!-- 旋转开关 -->
+    <div class="switch"><h2>没有/已有账号？</h2></div>
+    <input type="checkbox" style="display: none;" id="change">
+      <label for="change">切 换</label>
+
+    <div class="turn">
+      <div class="over">
+        <form action="{% url 'author_register_login' %}" name='login' method="POST">
+          {% csrf_token %}
+          <h1>登录</h1>
+            <input type="text"  name="username" placeholder="用户名">
+            <input type="password"  name="password" placeholder="密码">
+            <input type="submit" class="btn" value="登 录">
+        </form>
+        <form action="{% url 'author_register_login' %}" class="sign" name='register' method="POST">
+          {% csrf_token %}
+
+          <h1>注册</h1>
+          <input type="text" name="username" placeholder="用户名">
+          <input type="password" name="password"  placeholder="密码">
+          <input type="password" name="confirm_password"  placeholder="确认密码">
+          <input type="submit" class="btn" value="注 册">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
